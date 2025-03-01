@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>다음 블록 미리보기 & 드롭버튼 테트리스</title>
+  <style>
+    /* 전체 페이지 스타일 */
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      user-select: none;
+      text-align: center;
+      /* 예쁜 배경을 위해 그라디언트 적용 */
+      background: linear-gradient(135deg, #74ABE2 0%, #5563DE 100%);
+      color: #fff;
+    }
+
+    /* 제목 스타일 */
+    h1 {
+      margin-top: 20px;
+    }
+
+    /* 게임 및 사이드 정보 컨테이너 */
+    #container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 30px;
+    }
+
+    /* 메인 게임 캔버스 */
+    #game {
+      /* 살짝 어두운 반투명 배경으로 보드를 감쌈 */
+      background-color: rgba(0,0,0,0.7);
+      border: 2px solid #888;
+    }
+
+    /* 사이드 정보 박스 */
+    #info {
+      margin-left: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+      /* 배경과 구분감 주기 위해 약간의 반투명 박스 */
+      background-color: rgba(0,0,0,0.3);
+      padding: 10px 20px;
+      border-radius: 8px;
+    }
+
+    /* 다음 블록 미리보기 캔버스 */
+    #next {
+      background-color: rgba(0, 0, 0, 0.7);
+      border: 2px solid #888;
+      margin-bottom: 10px;
+    }
+
+    /* 점수 표시 */
+    #score {
+      font-size: 24px;
+      margin: 20px auto;
+    }
+
+    /* 드롭 버튼 */
+    #drop-button {
+      cu
